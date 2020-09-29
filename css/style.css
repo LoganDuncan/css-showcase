@@ -1,0 +1,1056 @@
+@import url('https://fonts.googleapis.com/css?family=Jura:300,400,500,600,700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* z-index: 1; */
+}
+
+body {
+    font-family: 'Jura', sans-serif;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Base Design: Mobile */
+
+/* #region Page 1 */
+
+.page1 {
+    background-image: url(../images/companyslide.png);
+    object-fit: cover;
+    color: white;
+    background-position: center;
+    height: 100vh;
+    padding-top: 20px;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 7% 23% 25% 5% 5% 5% 25% 5%;
+    grid-template-areas: "logo title hamburger" "hero1 hero1 hero1" "hero2 hero2 hero2" ". estimates ." ". phone ." ". . ." "badges badges badges" ". . .";
+}
+
+.page1>* {
+    position: relative;
+    z-index: 4;
+}
+
+.page1::after {
+    top: 0;
+    left: 0;
+    content: '';
+    background: #7a90b5;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: .6;
+}
+
+.page1logo {
+    grid-area: logo;
+    margin-left: -80px;
+}
+
+.page1title {
+    grid-area: title;
+    margin-left: -100%;
+}
+
+.page1title h2 {
+    margin-top: -15px;
+    text-align: right;
+}
+
+.hamburger {
+    grid-area: hamburger;
+    margin-right: -100px;
+    font-size: 3rem;
+    color: white;
+}
+
+.hamburger a {
+    color: white;
+}
+
+.page1hero1 {
+    grid-area: hero1;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-right: 28px;
+    font-size: 1.2rem;
+}
+
+.page1hero2 {
+    grid-area: hero2;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-right: 28px;
+    font-size: 1.4rem;
+}
+
+.page1estimates {
+    grid-area: estimates;
+    color: #7a90b5;
+    background-color: white;
+    padding: 5px 20px;
+    border-radius: 5px 20px 5px;
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.page1estimates a {
+    text-decoration: none;
+    color: #7a90b5;
+}
+
+.page1estimates a:hover {
+    text-decoration: underline;
+}
+
+.headerphone {
+    grid-area: phone;
+    color: white;
+    font-size: 1.4rem;
+    padding-top: 5px;
+    font-weight: 500;
+}
+
+.headerphone a {
+    text-decoration: underline;
+    color: white;
+}
+
+.headerphone a:hover {
+    color: #7a90b5;
+}
+
+.page1badges {
+    grid-area: badges;
+    display: flex;
+    background-color: #7a90b5;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+.page1badges p {
+    padding-top: 10px;
+}
+
+/* Hidden at mobile */
+
+.page1spartan {
+    display: none;
+}
+
+.page1products {
+    display: none;
+}
+
+nav {
+    display: none;
+}
+
+/* #endregion */
+
+/* #region Page 2 */
+
+.page2 {
+    /* height: 150vh; */
+    padding-top: 20px;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.page2content h1 {
+    position: relative;
+}
+
+.page2content img {
+    background: #7a90b5;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 42%;
+}
+
+.page2estimates {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.page2content span {
+    color: #7a90b5;
+}
+
+.page2content h1::after {
+    position: absolute;
+    height: 1.5px;
+    width: 45px;
+    content: '';
+    background: #7a90b5;
+    margin-top: 43px;
+    margin-left: -170px;
+}
+
+.backgroundcontainer {
+    background-color: #eeeded;
+    margin: 35px;
+    padding: 35px;
+    font-size: 1.3rem;
+}
+
+.content h1 {
+    text-align: center;
+    color: #7a90b5;
+}
+
+.page2form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.secondh1 {
+    margin-left: 50px;
+    margin-top: -25px;
+}
+
+label {
+    padding-left: 10px;
+}
+
+input {
+    margin: 5px;
+    margin-left: 10px;
+}
+
+textarea {
+    margin: 10px;
+}
+
+.page2estimates img {
+    margin-bottom: -28px;
+}
+
+/* #endregion */
+
+/* #region Page 3 */
+
+.page3 {
+    color: white;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.page3content h1 {
+    color: white;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.backgroundwrapper {
+    background-image: url(../images/smith_rock.png);
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    padding: 100px 25px;
+}
+
+.page3content h1::after {
+    position: absolute;
+    height: 1px;
+    width: 45px;
+    content: '';
+    background: white;
+    margin-top: 50px;
+    margin-left: -145px;
+}
+
+.oregon {
+    margin-bottom: -50px;
+    margin-left: 135px;
+}
+
+.page3content {
+    background-color: #7a90b5;
+    height: 100vh;
+    max-width: 380px;
+    padding: 20px;
+    padding-top: 50px;
+}
+
+.page3content p {
+    font-size: 1.3rem;
+    line-height: 1.75rem;
+}
+
+.page3partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page3logo {
+    background-color: #7a90b5;
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 85% 0);
+    width: 450px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.page3 .blue {
+    background-color: #7a90b5;
+    opacity: 60%;
+}
+
+.page3npca {
+    background-image: url(../images/small/npcasmall.png);
+    height: 150px;
+    width: 300px;
+    background-position: center;
+}
+
+.page3prpca {
+    background-image: url(../images/small/pnpcasmall.png);
+    height: 150px;
+    width: 300px;
+    background-position: center;
+}
+
+.page3concretepipe {
+    background-image: url(../images/small/concretepipesmall.png);
+    height: 150px;
+    width: 300px;
+    background-position: center;
+}
+
+.page3nw {
+    background-image: url(../images/small/nwsmall.png);
+    height: 150px;
+    width: 300px;
+    background-position: center;
+}
+
+/* #endregion */
+
+/* #region Page 4 */
+
+.page4 {
+    /* height: 150vh; */
+    max-width: 450px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: "aside" "main";
+}
+
+.page4aside {
+    grid-area: aside;
+    color: white;
+    height: 100vh;
+    text-align: center;
+    background-image: url(../images/slabs.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.page4aside>* {
+    z-index: 2;
+    position: relative;
+}
+
+.page4estimates {
+    color: #7a90b5;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 5px 20px 5px;
+    text-align: center;
+    max-width: 150px;
+    font-size: 2rem;
+    margin: 0 auto;
+}
+
+.page4content {
+    grid-area: main;
+    height: 450px;
+    background-color: #eeeded;
+    padding: 10px;
+}
+
+.page4aside>h1, a {
+    margin-top: 50%;
+    text-decoration: none;
+}
+
+.page4 .additional {
+    color: #7a90b5;
+}
+
+.page4content p {
+    font-size: 1.3rem;
+}
+
+.page4content h1 {
+    padding-bottom: 30px;
+}
+
+.page4content h1::after {
+    position: absolute;
+    height: 1px;
+    width: 45px;
+    content: '';
+    background: #7a90b5;
+    margin-top: 60px;
+    margin-left: -100px;
+}
+
+.page4aside::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #7a90b5;
+    opacity: .3;
+    z-index: 0;
+}
+
+/* #endregion */
+
+/* #region Page 5 */
+
+.page5 {
+    /* height: 175vh; */
+    max-width: 450px;
+    display: grid;
+    grid-template-areas: "birdseye" "page5content1" "concrete" "page5content2";
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    gap: 1.2rem;
+}
+
+.page5 .sidepicture {
+    margin: 0 auto;
+}
+
+/* .birdseye::after {
+    content: '';
+    background: #eeeded;
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 300px;
+    width: 450px;
+    margin-left: 1rem;
+    margin-top: -1rem;
+    z-index: 0;
+} */
+
+.birdseye {
+    grid-area: birdseye;
+    background-image: url(../images/small/birdseyesmall.png);
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    background-position: center;
+    clip-path: polygon(0% 0%, 0 100%, 100% 100%, 75% 0);
+    position: relative;
+    z-index: 4;
+}
+
+.concrete {
+    grid-area: concrete;
+    background-image: url(../images/small/concretesmall.jpg);
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    background-position: center;
+    clip-path: polygon(25% 0%, 0% 100%, 100% 100%, 100% 0);
+}
+
+.page5content1 {
+    grid-area: page5content1;
+}
+
+.page5content2 {
+    grid-area: page5content2;
+}
+
+.page5 p {
+    font-size: 1.3rem;
+}
+
+.page5 h1 {
+    margin-bottom: 30px;
+}
+
+.page5 h1::after {
+    position: absolute;
+    height: 1px;
+    width: 45px;
+    content: '';
+    background: #7a90b5;
+    margin-top: 50px;
+    margin-left: -150px;
+}
+
+.browsebutton {
+    padding: 10px;
+    background-color: #7a90b5;
+    color: white;
+    border-radius: 5px 20px 5px;
+    width: 200px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+.page5content2 span {
+    color: #7a90b5;
+}
+
+/* #endregion */
+
+/* #region Page 6 */
+
+.page6 {
+    display: grid;
+    grid-template-areas: "quote" "footer";
+    /* height: 150vh; */
+    max-width: 550px;
+    margin: 0 auto;
+    background-color: #eeeded;
+    text-align: center;
+}
+
+.page6 p {
+    font-size: 1.8rem;
+}
+
+.page6top {
+    grid-area: quote;
+    background-image: url(../images/concretebackground.png);
+    height: auto;
+    object-fit: cover;
+    background-position: center;
+    color: white;
+    display: grid;
+    height: 600px;
+}
+
+.mainquote {
+    font-weight: 700;
+    padding: 20px;
+}
+
+.quoteauthor {
+    font-weight: 600;
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.openquote {
+    font-size: 3em;
+    text-align: left;
+    padding: 20px;
+}
+
+.closequote {
+    font-size: 3em;
+    text-align: right;
+    padding: 20px;
+}
+
+.quoteauthor::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 250px;
+    background: white;
+    margin-top: -2rem;
+}
+
+.page6 .blue {
+    background-color: #7a90b5;
+    opacity: 60%;
+}
+
+.page6footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-areas: "about" "products" "contact" "logos";
+}
+
+.footerabout {
+    grid-area: about;
+}
+
+.footerproducts {
+    grid-area: products;
+}
+
+.footercontact {
+    grid-area: contact;
+    line-height: 2;
+}
+
+.footerlogos {
+    grid-area: logos;
+}
+
+.page6 ul {
+    list-style-type: none;
+    line-height: 2;
+}
+
+.page6 li {
+    color: #7a90b5;
+    font-size: 1.3rem;
+}
+
+.phonenumber {
+    font-weight: 400;
+    color: #7a90b5;
+}
+
+.page6 h3 {
+    margin-top: -20px;
+    font-size: 1.15rem;
+}
+
+.extra {
+    font-size: .6em;
+}
+
+/* #endregion */
+
+/* 576-768px */
+
+@media(min-width:576px) {
+    .page2, .page3, .page4, .page5, .page6 {
+        max-width: 765px;
+    }
+    .page5content1, .page5content2, .page4content {
+        width: 600px;
+        margin: 0 auto;
+    }
+    .page4content h1::after {
+        margin-left: -275px;
+    }
+    .page6footer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "logos about" "products contact";
+        margin-top: 20px;
+    }
+}
+
+/* 768-992px */
+
+@media(min-width:768px) {
+    .page3 {
+        max-width: 992px;
+    }
+    .page3content {
+        margin-left: 250px;
+        max-width: 500px;
+        padding-right: 100px;
+        clip-path: polygon(0% 0%, 85% 0%, 100% 100%, 0% 100%);
+    }
+    .page3 .oregon {
+        margin-left: 200px;
+        position: relative;
+        z-index: 3;
+    }
+    .page4 {
+        max-width: 100%;
+        background-image: url(../images/slabs.png);
+        background-position: center;
+        background-size: cover;
+    }
+    .page4aside {
+        background-image: none;
+    }
+    .page4aside::after {
+        display: none;
+    }
+    .slabs2>* {
+        z-index: 2;
+        position: relative;
+    }
+    .page4::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #7a90b5;
+        opacity: .3;
+        z-index: 0;
+    }
+    .page4content {
+        height: auto;
+        z-index: 2;
+    }
+    .page6 {
+        max-width: 100%;
+    }
+    .mainquote {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .page6footer {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: ". logos about ." ". products contact .";
+    }
+}
+
+/* 992-1200px */
+
+@media(min-width:992px) {
+    /* #region Page 1 */
+    .page1 {
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: 10% 40% 5% 5% 30% 10%;
+        grid-template-areas: ". logo title nav nav nav hamburger ." ". hero1 hero1 hero1 hero1 . estimates ." ". hero2 hero2 hero2 hero2 . phone ." ". . . . . . . ." "products products products products badges badges badges badges" ". . . . . . . .";
+    }
+    .page1nav {
+        display: inline;
+        grid-area: nav;
+        font-size: 1.1rem;
+        margin-right: -120px;
+    }
+    nav ul {
+        list-style-type: none;
+    }
+    nav ul li {
+        display: inline-block;
+        padding: 10px;
+    }
+    nav a {
+        color: white;
+    }
+    nav a:hover {
+        color: #2994d4;
+        text-decoration: underline;
+    }
+    .page1logo {
+        margin-left: -12rem;
+    }
+    .hamburger {
+        margin-right: -220px;
+    }
+    .page1hero2 {
+        margin-top: -115px;
+    }
+    .headerphone {
+        margin-top: -115px;
+        font-size: 1.5rem;
+    }
+    .page1badges {
+        height: 175px;
+        clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
+        z-index: 3;
+    }
+    .page1products {
+        grid-area: products;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: white;
+        width: 525px;
+        height: 140px;
+        clip-path: polygon(15% 0%, 100% 0%, 90% 100%, 0% 100%);
+        margin-right: -85px;
+        z-index: 4;
+    }
+    .page1products h2 {
+        margin-top: 20%;
+        font-size: 1.25rem;
+    }
+    .catchbasins {
+        background: #7a90b5;
+        height: 75px;
+        width: 80px;
+        margin: 10px;
+        margin-left: 80px;
+        border-radius: 5px;
+    }
+    .manholes {
+        background: #7a90b5;
+        height: 75px;
+        width: 80px;
+        margin: 10px;
+        border-radius: 5px;
+    }
+    .vaults {
+        background: #7a90b5;
+        height: 75px;
+        width: 80px;
+        margin: 10px;
+        border-radius: 5px;
+    }
+    .customjobs {
+        background: #7a90b5;
+        height: 75px;
+        width: 80px;
+        margin: 10px;
+        border-radius: 5px;
+    }
+    .vaults h2, .customjobs h2 {
+        margin-top: 35%;
+    }
+    /* #endregion */
+    /* #region Page 2 */
+    .page2 {
+        display: grid;
+        height: 100vh;
+        grid-template-areas: "content form";
+        padding-top: 10vh;
+        max-width: 750px;
+    }
+    .page2content {
+        grid-area: content;
+        width: 500px;
+        background-color: #eeeded;
+        height: 550px;
+        position: relative;
+        padding-bottom: 20px;
+        padding-left: 10px;
+    }
+    .page2content h1 {
+        text-align: left;
+        margin: 35px;
+    }
+    .backgroundcontainer {
+        padding: 0;
+    }
+    .page2form {
+        grid-area: form;
+        height: 80vh;
+        position: relative;
+    }
+    .strongarm {
+        display: none;
+    }
+    .page2content h1::after {
+        margin-left: -291px;
+        margin-top: 50px;
+    }
+    .page2form::before {
+        content: '';
+        display: block;
+        width: 127px;
+        height: 127px;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        margin-left: -610px;
+        margin-top: 177px;
+        /* z-index: -1; */
+    }
+    .page2content::before {
+        content: '';
+        display: block;
+        width: 90px;
+        height: 90px;
+        background-image: url(../images/muscular-before.png);
+        object-fit: cover;
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        margin-left: -90px;
+        margin-top: 200px;
+        z-index: 1;
+    }
+    /* #endregion */
+    /* #region Page 3 */
+    .page3 {
+        max-width: 100vw;
+    }
+    .page3partners {
+        height: 30vh;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        max-width: 100vw;
+    }
+    .page3rvppartners {
+        position: relative;
+        z-index: 0;
+    }
+    .page3npca {
+        z-index: 2;
+        margin-left: -90px;
+    }
+    .page3prpca {
+        z-index: 2;
+    }
+    .page3content {
+        height: 600px;
+    }
+    /* #endregion */
+    /* #region Page 4 */
+    .page4 {
+        grid-template-rows: .5fr 1fr;
+        grid-template-columns: repeat(5, 1fr);
+        background-image: none;
+        grid-template-areas: ". . . . ." ". main . aside .";
+        position: relative;
+        z-index: 1;
+    }
+    .slabs2 {
+        background-image: url(../images/slabs.png);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        height: 90vh;
+        margin-bottom: 250px;
+    }
+    .page4::after {
+        display: none;
+    }
+    .slabs2::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #7a90b5;
+        opacity: .3;
+        z-index: 0;
+    }
+    .page4content {
+        margin-top: -100px;
+        height: 600px;
+    }
+    .page4aside {
+        margin-top: -100px;
+    }
+    /* #endregion */
+    .page5 {
+        grid-template-areas: "birdseye page5content1" "page5content2 concrete";
+        max-width: 100vw;
+        margin-bottom: 50px;
+        padding: 30px;
+    }
+    .page5content1, .page5content2 {
+        width: auto;
+    }
+    .page6topwords {
+        max-width: 75%;
+        margin: 0 auto;
+    }
+    .openquote, .closequote {
+        font-size: 5rem;
+    }
+    .page6footer {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: ". logos about products contact .";
+        gap: 2rem;
+    }
+}
+
+/* 1200px+ */
+
+@media(min-width:1200px) {
+    .page1 {
+        max-width: 100vw;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-areas: ". logo title nav nav . phone estimates hamburger" ". hero1 hero1 hero1 hero1 . spartan spartan spartan" ". hero2 hero2 hero2 hero2 . spartan spartan spartan" ". . . . . . . . ." ". products products products products badges badges badges badges" ". . . . . . . . .";
+    }
+    .page1spartan {
+        display: block;
+        background: white;
+        grid-area: spartan;
+        color: #7a90b5;
+        text-align: center;
+        height: 240px;
+        margin-top: 90px;
+        clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
+        font-size: 1.12rem;
+        padding: 20px;
+        padding-left: 50px;
+    }
+    .page1badges {
+        width: 700px;
+    }
+    .page1products {
+        width: 600px;
+        margin-left: -100px;
+    }
+    .catchbasins {
+        margin-left: 115px;
+    }
+    .headerphone {
+        padding: 0;
+        margin: 0;
+        margin-right: 20px;
+    }
+    .hamburger {
+        margin-left: -155px;
+    }
+    .page3 {
+        max-width: 100vw;
+    }
+    .page3content {
+        height: 600px;
+        margin-left: 400px;
+    }
+    .page3 .oregon {
+        margin-left: 350px;
+    }
+    .page3content h1 {
+        text-align: left;
+    }
+    .page3content h1::after {
+        margin-left: -228px;
+    }
+    .slabs2 {
+        max-width: 100vw;
+        margin: 0 auto;
+        margin-bottom: 140px;
+    }
+    .page4 {
+        max-width: 100vw;
+    }
+    .page4content {
+        padding: 20px;
+    }
+    .page4content h1 {
+        text-align: left;
+    }
+    .page4content h1::after {
+        margin-left: -455px;
+    }
+    .page5 {
+        max-width: 1200px;
+        margin-top: 100px;
+    }
+    .page6 {
+        max-width: 100vw;
+    }
+    .footercontact h1 {
+        margin-bottom: -5px;
+    }
+}
